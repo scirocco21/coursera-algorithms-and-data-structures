@@ -5,15 +5,15 @@ def calc_fib(n)
 end
 
 # more efficient algorithm that avoids computing same values over and over
-def calc_fib(n)
+def calc_fib(n
+  # initialize list with first two numbers
   fib_list = [0, 1]
   i = 2
   while i < n
     fib_list.push(fib_list[i-1] + fib_list[i-2])
     i += 1
   end
-
-  return fib_list[n]
+  return fib_list[n-1]
 end
 
 if __FILE__ == $0
