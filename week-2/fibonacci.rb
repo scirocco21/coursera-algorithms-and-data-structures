@@ -8,12 +8,13 @@ end
 def calc_fib(n
   # initialize list with first two numbers
   fib_list = [0, 1]
+  # then iteratively add new members of the series, up but not including n
   i = 2
-  while i < n
+  while i <= n
     fib_list.push(fib_list[i-1] + fib_list[i-2])
     i += 1
   end
-  return fib_list[n-1]
+  return fib_list[n]
 end
 
 if __FILE__ == $0
