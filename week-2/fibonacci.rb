@@ -5,7 +5,7 @@ def calc_fib(n)
 end
 
 # more efficient algorithm that avoids computing same values over and over
-def calc_fib(n
+def calc_fib(n)
   # initialize list with first two numbers
   fib_list = [0, 1]
   # then iteratively add new members of the series, up but not including n
